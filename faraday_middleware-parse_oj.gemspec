@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'faraday_middleware/parse_oj'
+require 'faraday_middleware/parse_oj_version'
 
 Gem::Specification.new do |gem|
   gem.authors       = ['Vsevolod Romashov']
@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = 'faraday_middleware-parse_oj'
   gem.require_paths = ['lib']
-  gem.version       = FaradayMiddleware::ParseOj::VERSION
+  gem.version       = FaradayMiddleware::PARSE_OJ_VERSION
   
   gem.add_runtime_dependency 'faraday_middleware', '~> 0.8'
   gem.add_runtime_dependency 'oj',                 '~> 2.0'

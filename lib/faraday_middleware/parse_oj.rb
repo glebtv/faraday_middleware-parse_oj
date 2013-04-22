@@ -1,3 +1,4 @@
+require 'parse_oj_version'
 require 'faraday_middleware/response_middleware'
 
 module FaradayMiddleware
@@ -7,8 +8,6 @@ module FaradayMiddleware
     define_parser do |body|
       Oj.load(body, mode: :compat) unless body.strip.empty?
     end
-    
-    VERSION = '0.2'
   end
 end
 
