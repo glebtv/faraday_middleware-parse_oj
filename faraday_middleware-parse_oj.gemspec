@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/faraday_middleware/parse_oj', __FILE__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'faraday_middleware/parse_oj'
 
 Gem::Specification.new do |gem|
   gem.authors       = ['Vsevolod Romashov']
