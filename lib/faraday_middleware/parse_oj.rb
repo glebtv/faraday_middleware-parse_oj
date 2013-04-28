@@ -1,4 +1,3 @@
-require 'parse_oj_version'
 require 'faraday_middleware/response_middleware'
 
 module FaradayMiddleware
